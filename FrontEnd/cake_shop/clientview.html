@@ -4,124 +4,124 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="clientview.css">
         <title>Pastelería</title>
     </head>
     <body>
         <section>
-            <h3>Sabores</h3>
-            <hr>
             <table>
-
+                <caption>Sabores disponibles</caption>
                 <!--Encabezados-->
 
-                <tr>
-                    <th>
-                    <th>Precio</th>
+                <tr class="sep">
+                    <th class="flavor">Sabor</th>
+                    <th class="cost">Precio</th>
                 </tr>
 
                 <!--Contenido-->
 
                 <tr>
-                    <td>
+                    <td class="flavor">
                         <dl>
-                            <dt>Chocolate</dt>
+                            <dt onclick="hideDescription(this)">Chocolate</dt>
                             <dd>Pastel de chocolate tradicional.</dd>
                         </dl>
                     </td>
-                    <td>$100</td>
+                    <td class="cost">$100</td>
                 </tr>
 
                 <tr>
-                    <td>
+                    <td class="flavor">
                         <dl>
-                            <dt>Tres leches</dt>
+                            <dt onclick="hideDescription(this)">Tres leches</dt>
                             <dd>Bizcocho bañado en tres diferentes tipos de leche.</dd>
                         </dl>
                     </td>
-                    <td>$250</td>
+                    <td class="cost">$250</td>
                 </tr>
 
                 <tr>
-                    <td>
+                    <td class="flavor">
                         <dl>
-                            <dt>Cheescake</dt>
+                            <dt onclick="hideDescription(this)">Cheescake</dt>
                             <dd>Pastel de queso a base de hojaldre cubierto con mermelada de fruta.</dd>
                         </dl>
                     </td>
-                    <td>$500</td>
+                    <td class="cost">$500</td>
                 </tr>
 
                 <tr>
-                    <td>
+                    <td class="flavor">
                         <dl>
-                            <dt>Crepas</dt>
+                            <dt onclick="hideDescription(this)">Crepas</dt>
                             <dd>Pastel en capas cubierto con crema o mermelada sobre cada capa.</dd>
                         </dl>
                     </td>
-                    <td>$1000</td>
+                    <td class="cost">$1000</td>
                 </tr>
 
                 <tr>
-                    <td>
+                    <td class="flavor">
                         <dl>
-                            <dt>Moka</dt>
+                            <dt onclick="hideDescription(this)">Moka</dt>
                             <dd>Pastel cubierto de una crema hecha a base de chocolate y café.</dd>
                         </dl>
                     </td>
-                    <td>$800</td>
+                    <td class="cost">$800</td>
                 </tr>
 
                 <tr>
-                    <td>
+                    <td class="flavor">
                         <dl>
-                            <dt>Cajeta</dt>
+                            <dt onclick="hideDescription(this)">Cajeta</dt>
                             <dd>Pastel de vanilla cubierto con crema de cajeta.</dd>
                         </dl>
                     </td>
-                    <td>$300</td>
+                    <td class="cost">$300</td>
                 </tr>
 
                 <tr>
-                    <td>
+                    <td class="flavor">
                         <dl>
-                            <dt>Mousse de limón</dt>
+                            <dt onclick="hideDescription(this)">Mousse de limón</dt>
                             <dd>Pastel sabor limón montado sobre una base de galleta y nuez.</dd>
                         </dl>
                     </td>
-                    <td>$700</td>
+                    <td class="cost">$700</td>
                 </tr>
 
                 <tr>
-                    <td>
+                    <td class="flavor">
                         <dl>
-                            <dt>Selva negra</dt>
+                            <dt onclick="hideDescription(this)">Selva negra</dt>
                             <dd>Pastel de chocolate complementado con licor sabor cereza.</dd>
                         </dl>
                     </td>
-                    <td>$400</td>
+                    <td class="cost">$400</td>
                 </tr>
 
                 <tr>
-                    <td>
+                    <td class="flavor">
                         <dl>
-                            <dt>Arcoiris</dt>
+                            <dt onclick="hideDescription(this)">Arcoiris</dt>
                             <dd>Paste que combina tres tipos de pan: <b>vainilla, chocolate y fresa.</b></dd>
                         </dl>
                     </td>
-                    <td>$100,000</td>
+                    <td class="cost">$100,000</td>
                 </tr>
                 
                 <tr>
-                    <td>
+                    <td class="flavor">
                         <dl>
-                            <dt>Oreo</dt>
+                            <dt onclick="hideDescription(this)">Oreo</dt>
                             <dd>Bizcocho con trocitos de galleta Oreo.</dd>
                         </dl>
                     </td>
-                    <td>$10</td>
+                    <td class="cost">$10</td>
                 </tr>
 
             </table>
         </section>
     </body>
+    <script src="clientview.js"></script>
 </html>
