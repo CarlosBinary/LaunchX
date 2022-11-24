@@ -1,0 +1,129 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 85vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+header > h1:first-child {
+  margin: 0;
+}
+
+main {
+  flex-basis: 85vh;
+  margin-top: 15vh;
+}
+
+footer {
+  flex-basis: 30vh;
+}
+
+#flavor_section {
+  display: flex;
+  /*border: 1px solid #cc2266;*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#flavor_list {
+  display: flex;
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #555555;
+  /*border: 1px solid #00aa77;*/
+  background-color: #eaeaea;
+  overflow-y: hidden;
+  overflow-x: auto;
+  max-width: 400px;
+  padding: 5px 0px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#flavor_list::-webkit-scrollbar {
+  display: none;
+}
+
+#flavor_list > li {
+  padding: 0;
+  margin: 0px 5px;
+  border: 1px solid #aaaaff;
+  min-width: 250px;
+  min-height: 175px;
+  position: relative;
+  background-color: #cc2266;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#flavor_list > li > p {
+  display: inline-block;
+}
+
+#flavor_list > li > p:first-child {
+  color: #995522;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  margin-top: 4%;
+  margin-right: 4%;
+  font-size: 28pt;
+  text-align: right;
+  background-color: #eaeaea90;
+}
+
+.cost_view {
+  color: #8d8;
+  background-color: #333b;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 4%;
+  margin-right: 4%;
+  padding: 3px 5px;
+  border: 1px solid #88cc88;
+  border-radius: 10%;
+}
+
+#cheesecake {
+  background-image: url("/img/cheesecake.jpg");
+}
+
+#threemilk {
+  background-image: url("/img/tres_leches.jpg");
+}
+
+#tiramisu {
+  background-image: url("/img/tiramisu.jpg");
+}
+
+#chocotruffle {
+  background-image: url("/img/trufa_de_chocolate.jpg");
+}
+
+#santicake {
+  background-image: url("/img/tarta_de_santiago.jpg");
+}
+
+#flavor_list > li > input[type="checkbox"] {
+  position: relative;
+  z-index: 1;
+  min-width: 8%;
+  min-height: 8%;
+}
