@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -49,7 +53,7 @@ footer {
   background-color: #eaeaea;
   overflow-y: hidden;
   overflow-x: auto;
-  max-width: 400px;
+  max-width: 700px;
   padding: 5px 0px;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -63,8 +67,8 @@ footer {
   padding: 0;
   margin: 0px 5px;
   border: 1px solid #aaaaff;
-  min-width: 250px;
-  min-height: 175px;
+  min-width: 400px;
+  min-height: 350px;
   position: relative;
   background-color: #cc2266;
   background-repeat: no-repeat;
@@ -126,4 +130,17 @@ footer {
   z-index: 1;
   min-width: 8%;
   min-height: 8%;
+}
+
+@media only screen and (max-width: 600px) {
+  #flavor_list {
+    max-width: 250px;
+  }
+
+  #flavor_list > li {
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 150px;
+    max-Height: 150px;
+  }
 }
